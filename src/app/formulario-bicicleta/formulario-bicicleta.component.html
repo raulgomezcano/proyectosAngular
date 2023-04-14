@@ -1,0 +1,28 @@
+<h1>Datos de bicicleta</h1>
+<label for="id_color">Color: </label>
+<input  id="id_color" type="text" [(ngModel)]="bicicleta1.color" placeholder="Elige color">
+<br>
+<label for="id_Marca">Marca: </label>
+<input id="id_Marca" type="text" [(ngModel)]="bicicleta1.marca" placeholder="Escriba su marca">
+<br>
+<label for="id_velocidad">Velocidad: </label>
+<input id="id_velocidad" type="number" [(ngModel)]="bicicleta1.velocidad" placeholder="Escriba su velocidad">
+<br>
+<label for="id_pinones">Piñones: </label>
+<input id="id_pinones" type="number" [(ngModel)]="bicicleta1.pinones" placeholder="Escriba su pinones">
+<br>
+<label for="id_platos">Platos: </label>
+<input id="id_platos" type="number" [(ngModel)]="bicicleta1.platos" placeholder="Escriba su platos">
+<br>
+<label for="id_electrica">Electrica: </label>
+<input id="id_electrica" type="checkbox" [(ngModel)]="bicicleta1.electrica">
+<br>
+<br>
+<br>
+<button (click)="enviar()">Enviar</button>
+<br>
+<p>{{resultado}}</p>
+<br>
+<br>
+<button (click)="bicicleta1.acelerar(20)">Acelerar</button>
+<button (click)="bicicleta1.frenar(20)">Frenar</button>
