@@ -24,5 +24,6 @@
 <p>{{resultado}}</p>
 <br>
 <br>
-<button (click)="bicicleta1.acelerar(20)">Acelerar</button>
-<button (click)="bicicleta1.frenar(20)">Frenar</button>
+Cambio de velocidad: <input type="number" [(ngModel)]="cambio">
+<button (click)="bicicleta1.acelerar(cambio)">Acelerar</button>
+<button (click)="bicicleta1.frenar(cambio)">Frenar</button>

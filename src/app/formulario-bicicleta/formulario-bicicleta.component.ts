@@ -8,7 +8,7 @@ import { bicicleta } from '../_modelo/bicicleta';
 export class FormularioBicicletaComponent {
   bicicleta1 = new bicicleta("rojo","BMX",30,8,6,false);
   resultado: string =""
-  cambio: number = this.bicicleta1.velocidad
+  cambio: number =0
   constructor(){}
   ngOnInit(): void{
   }
